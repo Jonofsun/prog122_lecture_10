@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:prog122_lecture_10"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <RichTextBox Margin="246,77,246,97">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbRunDisplay"  Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label x:Name="lblDay" Content="Day" HorizontalAlignment="Left" Margin="31,77,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMonth" Content="Month" HorizontalAlignment="Left" Margin="31,131,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblYear" Content="Year" HorizontalAlignment="Left" Margin="31,183,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDay" HorizontalAlignment="Left" Margin="31,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtMonth" HorizontalAlignment="Left" Margin="31,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtYear" HorizontalAlignment="Left" Margin="31,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnDisplayTime" Content="Display&#xD;&#xA;Time" HorizontalAlignment="Left" Margin="165,131,0,0" VerticalAlignment="Top" Height="68" Width="67" Click="btnDisplayTime_Click"/>
+        <Button x:Name="btnDrivers" Content="Can drive?" HorizontalAlignment="Left" Margin="165,215,0,0" VerticalAlignment="Top" Width="67" Height="34" Click="btnDrivers_Click"/>
+        <DatePicker x:Name="dpDate" HorizontalAlignment="Left" Margin="601,268,0,0" VerticalAlignment="Top"/>
+        <Calendar x:Name="calDate" HorizontalAlignment="Left" Margin="601,81,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnResults" Content="Results" HorizontalAlignment="Left" Margin="99,325,0,0" VerticalAlignment="Top" Width="99" Height="69" Click="btnResults_Click"/>
 
     </Grid>
 </Window>
